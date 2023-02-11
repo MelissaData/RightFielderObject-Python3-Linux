@@ -31,7 +31,7 @@ class RightFielderObject:
         print(f"              Expiration Date: {self.md_right_fielder_obj.GetLicenseExpirationDate()}")
       
         """
-        This number should match with file properties of the Melissa Data Object binary file.
+        This number should match with file properties of the Melissa Object binary file.
         If TEST appears with the build number, there may be a license key issue.
         """
         print(f"               Object Version: {self.md_right_fielder_obj.GetBuildNumber()}\n")
@@ -40,7 +40,7 @@ class RightFielderObject:
     def execute_object_and_result_codes(self, data):
 
         """
-        These are the configuarble pieces of the right fielder object. We are setting what kind of information we want to be looked up
+        These are the configuarble pieces of the Right Fielder Object. We are setting what kind of information we want to be looked up
         SetUserPattern Method - Ex. Social Security Number
 
         mdRightFielder.SetUserPattern("SSN", "[0-9]{3}-[0-9]{2}-[0-9]{4}");
@@ -50,8 +50,8 @@ class RightFielderObject:
         
 
         """ 
-        ResultsCodes explain any issues right fielder object has with the object.
-        List of result codes for Right Fielder object
+        ResultsCodes explain any issues Right Fielder Object has with the object.
+        List of result codes for Right Fielder Object
         https://wiki.melissadata.com/?title=Result_Code_Details#RightFielder_Object
         """
 
@@ -79,7 +79,7 @@ def parse_arguments():
     return (license, test_input, data_path)
 
 def run_as_console(license, test_input, data_path):
-    print("\n\n===== WELCOME TO MELISSA DATA RIGHT FIELDER OBJECT LINUX PYTHON3 SAMPLE ======\n")
+    print("\n\n=========== WELCOME TO MELISSA RIGHT FIELDER OBJECT LINUX PYTHON3 ============\n")
 
     right_fielder_object = RightFielderObject(license, data_path)
 
@@ -176,7 +176,7 @@ def run_as_console(license, test_input, data_path):
             
               print("Invalid Response, please respond 'Y' or 'N'")
 
-    print("\n=============== THANK YOU FOR USING MELISSA DATA PYTHON3 OBJECT ==============\n")
+    print("\n================== THANK YOU FOR USING MELISSA PYTHON3 OBJECT ================\n")
     
 
 

@@ -6,9 +6,9 @@ import os
 dir = os.getcwd()
 
 if (os.name == 'nt'):
-  lib = ctypes.CDLL(f'{dir}/MelissaDataRightFielderObjectWindowsPython3Sample/mdRightFielder.dll')
+  lib = ctypes.CDLL(f'{dir}/MelissaRightFielderObjectWindowsPython3/mdRightFielder.dll')
 else:
-  lib = ctypes.CDLL(f'{dir}/MelissaDataRightFielderObjectLinuxPython3Sample/libmdRightFielder.so')
+  lib = ctypes.CDLL(f'{dir}/MelissaRightFielderObjectLinuxPython3/libmdRightFielder.so')
 
 lib.mdRightFielderCreate.argtypes = []
 lib.mdRightFielderCreate.restype = c_void_p

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Name:    MelissaDataRightFielderObjectLinuxPython3
-# Purpose: Use the Melissa Updater to make the MelissaDataRightFielderObjectLinuxPython3 sample usable
+# Name:    MelissaRightFielderObjectLinuxPython3
+# Purpose: Use the Melissa Updater to make the MelissaRightFielderObjectLinuxPython3 usable
 
 ######################### Constants ##########################
 
@@ -43,13 +43,13 @@ done
 
 
 # ######################### Config ###########################
-RELEASE_VERSION="2023.01"
+RELEASE_VERSION='2023.01'
 ProductName="RF_DATA"
 
 # Uses the location of the .sh file 
 # Modify this if you want to use 
 CurrentPath=$(pwd)
-ProjectPath="$CurrentPath/MelissaDataRightFielderObjectLinuxPython3Sample"
+ProjectPath="$CurrentPath/MelissaRightFielderObjectLinuxPython3"
 BuildPath="$ProjectPath"
 DataPath="$ProjectPath/Data"
 
@@ -124,7 +124,7 @@ CheckSOs()
 }
 
 ########################## Main ############################
-printf "\n================ Sample of Melissa Data Right Fielder Object =================\n                    [ Python3 | Linux | 64BIT ]\n"
+printf "\n======================== Melissa Right Fielder Object ========================\n                    [ Python3 | Linux | 64BIT ]\n"
 
 # Get license (either from parameters or user input)
 if [ -z "$license" ];
@@ -177,12 +177,12 @@ fi
 
 printf "\nAll file(s) have been downloaded/updated!\n"
 
-# Start sample
+# Start
 
 # Run project
 if [ -z "$rfinput" ];
 then
-    python3 $BuildPath/MelissaDataRightFielderObjectLinuxPython3Sample.py --license $license  --dataPath $DataPath
+    python3 $BuildPath/MelissaRightFielderObjectLinuxPython3.py --license $license  --dataPath $DataPath
 else
-    python3 $BuildPath/MelissaDataRightFielderObjectLinuxPython3Sample.py --license $license  --dataPath $DataPath --rfinput "$rfinput"
+    python3 $BuildPath/MelissaRightFielderObjectLinuxPython3.py --license $license  --dataPath $DataPath --rfinput "$rfinput"
 fi

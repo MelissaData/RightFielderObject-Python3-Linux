@@ -1,8 +1,12 @@
-# Melissa Data Right Fielder Object Linux Python3 Sample
+# Melissa - Right Fielder Object Linux Python3
 
 ## Purpose
 
-This is a sample of the Melissa Data Right Fielder Object using Python3
+This code showcases the Melissa Right Fielder Object using Python3
+
+Please feel free to copy or embed this code to your own project. Happy coding!
+
+For the latest Melissa Right Fielder Object release notes, please visit: https://releasenotes.melissa.com/on-premise-api/rightfielder-object/
 
 The console will ask the user for:
 
@@ -21,13 +25,13 @@ And return
 
 - Linux 64-bit Python 3.8.7
 - Ubuntu 20.04.05 LTS
-- Melissa data files for 2023.01
+- Melissa data files for 2023-01
 
 ## Required File(s) and Programs
 
 #### libmdRightFielder.so
 
-This is the c++ code of the Melissa Data Object.
+This is the c++ code of the Melissa Object.
 
 #### Data File(s)
 - mdRightFielder.cfg
@@ -92,7 +96,7 @@ Melissa Updater is a CLI application allowing the user to update their Melissa a
 	- It will handle all of the data download/path and .so file(s) for you. 
 2.  If you already have the latest DQS Release (ZIP), you can find the data file(s) and .so file(s) in there
 	- Use the location of where you copied/installed the data and update the "DataPath" variable in the bash script.
-	- Copy all the .so file(s) mentioned above into the `MelissaDataRightFielderObjectLinuxPython3Sample` project folder.
+	- Copy all the .so file(s) mentioned above into the `MelissaRightFielderObjectLinuxPython3` project folder.
 
 ----------------------------------------
 
@@ -100,17 +104,17 @@ Melissa Updater is a CLI application allowing the user to update their Melissa a
 
 To be able to run the bash script, you must first make it an executable using the command:
 
-`chmod +x MelissaDataRightFielderObjectLinuxPython3Sample.sh`
+`chmod +x MelissaRightFielderObjectLinuxPython3.sh`
 
 Then you need to add permissions to the build directory with the command:
 
-`chmod +rwx MelissaDataRightFielderObjectLinuxPython3Sample`
+`chmod +rwx MelissaRightFielderObjectLinuxPython3`
 
 As an indicator, the filename will change colors once it becomes an executable.
 
-You may also need to alter permissions for the python files. To do this navigate into the MelissaDataRightFielderObjectLinuxPython3Sample directory and run these commands: \
-`chmod +rx MelissaDataRightFielderObjectLinuxPython3Sample/MelissaDataRightFielderObjectLinuxPython3Sample.py` \
-`chmod +rx MelissaDataRightFielderObjectLinuxPython3Sample/mdRightFielder_pythoncode.py`
+You may also need to alter permissions for the python files. To do this navigate into the MelissaRightFielderObjectLinuxPython3 directory and run these commands: \
+`chmod +rx MelissaRightFielderObjectLinuxPython3/MelissaRightFielderObjectLinuxPython3.py` \
+`chmod +rx MelissaRightFielderObjectLinuxPython3/mdRightFielder_pythoncode.py`
 
 ## Run Bash Script
 
@@ -119,31 +123,31 @@ Parameters:
  	
   This is convenient when you want to get results for a specific right fielder input in one run instead of testing multiple right fielder inputs in interactive mode.  
 
-- -l or --license (optional): a license string to test the right fielder object  
+- -l or --license (optional): a license string to test the Right Fielder Object  
 - -q or --quiet (optional): add to the command if you do not want to get any console output from the Melissa Updater
 
 When you have modified the script to match your data location, let's run the script. There are two modes:
 - Interactive 
 
-	The script will prompt the user for the right fielder input, then use the provided right fielder input to test the Right Fielder object. For example:
+	The script will prompt the user for the right fielder input, then use the provided right fielder input to test the Right Fielder Object. For example:
 	```
-	$ ./MelissaDataRightFielderObjectLinuxPython3Sample.sh
+	$ ./MelissaRightFielderObjectLinuxPython3.sh
 	```
     For quiet mode:
     ```
-    $ ./MelissaDataRightFielderObjectLinuxPython3Sample.sh --quiet
+    $ ./MelissaRightFielderObjectLinuxPython3.sh --quiet
     ```
 - Command Line 
 
-	You can pass a right fielder input in ```--rfinput``` parameter and a license string in ```--license``` parameter to test right fielder object. For example:
+	You can pass a right fielder input in ```--rfinput``` parameter and a license string in ```--license``` parameter to test Right Fielder Object. For example:
 	```
-    $ ./MelissaDataRightFielderObjectLinuxPython3Sample.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688"
-	$ ./MelissaDataRightFielderObjectLinuxPython3Sample.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688" --license "<your_license_string>" 
+    $ ./MelissaRightFielderObjectLinuxPython3.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688"
+	$ ./MelissaRightFielderObjectLinuxPython3.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688" --license "<your_license_string>" 
     ```
 	For quiet mode:
     ```
-    $ ./MelissaDataRightFielderObjectLinuxPython3Sample.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688" --quiet
-	$ ./MelissaDataRightFielderObjectLinuxPython3Sample.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688" --license "<your_license_string>" --quiet
+    $ ./MelissaRightFielderObjectLinuxPython3.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688" --quiet
+	$ ./MelissaRightFielderObjectLinuxPython3.sh --rfinput "22382 Avenida Empresa, Rancho Santa Margarita, CA 92688" --license "<your_license_string>" --quiet
     ```
 This is the expected output from a successful setup for interactive mode:
 
@@ -152,7 +156,7 @@ This is the expected output from a successful setup for interactive mode:
     
 ## Troubleshooting
 
-Troubleshooting for errors found while running your sample program.
+Troubleshooting for errors found while running your program.
 
 ### Errors:
 
@@ -167,7 +171,7 @@ Troubleshooting for errors found while running your sample program.
 ## Contact Us
 
 For free technical support, please call us at 800-MELISSA ext. 4
-(800-635-4772 ext. 4) or email us at tech@MelissaData.com.
+(800-635-4772 ext. 4) or email us at tech@melissa.com.
 
-To purchase this product, contact Melissa Data sales department at
+To purchase this product, contact Melissa sales department at
 800-MELISSA ext. 3 (800-635-4772 ext. 3).
