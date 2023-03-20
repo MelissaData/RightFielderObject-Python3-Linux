@@ -43,7 +43,7 @@ done
 
 
 # ######################### Config ###########################
-RELEASE_VERSION='2023.02'
+RELEASE_VERSION='2023.03'
 ProductName="RF_DATA"
 
 # Uses the location of the .sh file 
