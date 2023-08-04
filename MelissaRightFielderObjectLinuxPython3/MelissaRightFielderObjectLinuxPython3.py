@@ -99,7 +99,7 @@ def run_as_console(license, test_input, data_path):
 
         """ Print user input """
         print("\n================================== INPUTS ====================================\n")
-        print(f"\t               Right Fielder Input: {rf_input}")
+        print(f"\t           Right Fielder Input: {rf_input}")
         # print("\t               Address: {data.Address}")
         # print("\t          CityStateZip: {data.CityStateZip}")
         # print("\t               Company: {data.Company}")
@@ -119,9 +119,9 @@ def run_as_console(license, test_input, data_path):
         print("\n\tRight Fielder Object Information:")
 
         # print(f"\t   Right Fielder Input: {dataContainer.Input}")
-        print(f"\t          AddressLine1: {right_fielder_object.md_right_fielder_obj.GetAddress()}")
-        print(f"\t          AddressLine2: {right_fielder_object.md_right_fielder_obj.GetAddress2()}")
-        print(f"\t          AddressLine3: {right_fielder_object.md_right_fielder_obj.GetAddress3()}")
+        print(f"\t        Address Line 1: {right_fielder_object.md_right_fielder_obj.GetAddress()}")
+        print(f"\t        Address Line 2: {right_fielder_object.md_right_fielder_obj.GetAddress2()}")
+        print(f"\t        Address Line 3: {right_fielder_object.md_right_fielder_obj.GetAddress3()}")
         print(f"\t                  City: {right_fielder_object.md_right_fielder_obj.GetCity()}")
         print(f"\t                 State: {right_fielder_object.md_right_fielder_obj.GetState()}")
         print(f"\t                   Zip: {right_fielder_object.md_right_fielder_obj.GetPostalCode()}")

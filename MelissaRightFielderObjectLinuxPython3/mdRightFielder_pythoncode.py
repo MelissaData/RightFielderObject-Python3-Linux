@@ -3,12 +3,10 @@ from enum import Enum
 import ctypes
 import os
 
-dir = os.getcwd()
-
 if (os.name == 'nt'):
-  lib = ctypes.CDLL(f'{dir}/MelissaRightFielderObjectWindowsPython3/mdRightFielder.dll')
+  lib = ctypes.CDLL('mdRightFielder.dll', winmode=0)
 else:
-  lib = ctypes.CDLL(f'{dir}/MelissaRightFielderObjectLinuxPython3/libmdRightFielder.so')
+  lib = ctypes.CDLL('libmdRightFielder.so')
 
 lib.mdRightFielderCreate.argtypes = []
 lib.mdRightFielderCreate.restype = c_void_p

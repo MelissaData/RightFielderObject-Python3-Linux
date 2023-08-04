@@ -14,18 +14,17 @@ The console will ask the user for:
 
 And return 
 
-- AddressLine1
-- AddressLine2
+- Address Line 1
+- Address Line 2
 - City
 - State
 - Zip
-- ResultCodes
+- Result Codes
 
 ## Tested Environments
 
-- Linux 64-bit Python 3.8.7
-- Ubuntu 20.04.05 LTS
-- Melissa data files for 2023-06
+- Linux 64-bit Python 3.8.7, Ubuntu 20.04.05 LTS
+- Melissa data files for 2023-07
 
 ## Required File(s) and Programs
 
@@ -59,7 +58,7 @@ If you see the version number then you have installed Python3 and set up your en
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/RightFielderObject-Python3-Linux.git
+$ git clone https://github.com/MelissaData/RightFielderObject-Python3-Linux
 $ cd RightFielderObject-Python3-Linux
 ```
 

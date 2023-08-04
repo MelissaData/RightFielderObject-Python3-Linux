@@ -2,4 +2,5 @@ __pycache__/
 Data/
 libmdRightFielder.so
 libmdRightFielder.so.hash
+*.hash
 MelissaUpdater
