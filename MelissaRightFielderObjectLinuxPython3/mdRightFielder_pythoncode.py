@@ -2,9 +2,12 @@ from ctypes import *
 from enum import Enum
 import ctypes
 import os
+import sys
 
-if (os.name == 'nt'):
+if (os.name == 'nt' and sys.version_info[:2] >= (3,8)):
   lib = ctypes.CDLL('mdRightFielder.dll', winmode=0)
+elif (os.name == 'nt'):
+  lib = ctypes.CDLL('mdRightFielder.dll')
 else:
   lib = ctypes.CDLL('libmdRightFielder.so')
 
@@ -283,7 +286,7 @@ class mdRightFielder(object):
 	def GetResults(self):
 		return lib.mdRightFielderGetResults(self.I).decode('utf-8')
 
-	def GetResultCodeDescription(self, resultCode, opt):
+	def GetResultCodeDescription(self, resultCode, opt=0):
 		return lib.mdRightFielderGetResultCodeDescription(self.I, resultCode.encode('utf-8'), ResultCdDescOpt(opt).value).decode('utf-8')
 
 	def SetReserved(self, p1, p2):
